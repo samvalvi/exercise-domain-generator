@@ -9,8 +9,10 @@ const domainNameGenerator = (a, b, c, d) => {
     {
         for (let j = 0; j < b.length; j++)
         {
-            console.log(a[Math.floor(Math.random() * 2)] + b[Math.floor(Math.random() * 2)] + c[Math.floor(Math.random() * 2)] 
-            + d[Math.floor(Math.random() * 4)]);
+            for(let k = 0; k < c.length; k++){
+                console.log(a[Math.floor(Math.random() * 2)] + b[Math.floor(Math.random() * 2)] + c[Math.floor(Math.random() * 2)] 
+                + d[Math.floor(Math.random() * 4)]);
+            }
         }
     }
 }
